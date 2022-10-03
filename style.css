@@ -82,13 +82,34 @@ a{
 
 .wrapper figure{
     grid-area: figure;
+    width: 100%;
     min-height: 20rem;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    }
+.main__image{
+    max-width: 300px;
+    min-width: none;
+    padding: 1rem;
 }
+
 .wrapper .info{
     grid-area: info;
     min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.wrapper .info ul{
+    list-style:square
+    
+}
+
 .wrapper footer{
     grid-area: footer;
 }
