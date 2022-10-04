@@ -19,7 +19,7 @@ p, li, h2, h3, a{
 
 body .wrapper{
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
@@ -28,7 +28,7 @@ body .wrapper{
 }
 
 
-.index{
+.wrapper.index{
     grid-template-areas:
     "header header"
     "welcome welcome"
@@ -38,14 +38,14 @@ body .wrapper{
     "footer footer"
     ;
 }
-.about_us{
+.wrapper.about_us{
     grid-template-areas:
     "header header"
     "main main "
     "footer footer"
     ;
 }
-.booking{
+.wrapper.booking{
     grid-template-areas:
     "header header"
     "booking booking"
@@ -53,7 +53,7 @@ body .wrapper{
     ;
 }
 
-header{
+.wrapper header{
     grid-area: header;
     height: 5rem;
     width: 100%;
@@ -72,6 +72,19 @@ header{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+.wrapper footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: #F0DD92;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.wrapper footer p{
+    justify-self: center;
+    align-self: center;
+}
+
+/* INDEX PAGE */
 
 .wrapper .greeting{
     grid-area: welcome;
@@ -129,17 +142,6 @@ header{
     list-style:square
 }
 
-.wrapper footer{
-    grid-area: footer;
-    width: 100%;
-    background-color: #F0DD92;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.wrapper footer p{
-    justify-self: center;
-    align-self: center;
-}
 
 /* ABOUT US  */
 .wrapper .about__main{
@@ -290,7 +292,7 @@ header{
             }
 
 @media screen and (min-width: 768px) {
-    body .index{
+    body .wrapper.index{
         max-width: 1000px;
         margin: 0 auto;
         display: grid;
