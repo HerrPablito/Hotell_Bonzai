@@ -129,7 +129,7 @@ body .wrapper{
     padding: 1rem;
 }
 
-.wrapper .info{
+.wrapper .sidebar_list{
     grid-area: info;
     min-height: 10rem;
     display: flex;
